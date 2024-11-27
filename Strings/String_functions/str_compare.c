@@ -1,3 +1,12 @@
+/*  strcmp() is a string function in the header file <string.h>, which takes two strings as input and compares both of the strings.
+<br>
+#include <string.h>
+int strcmp(const char *s1, const char *s2);
+int strncmp(const char *s1, const char *s2, size_t n);
+
+This code compares two strings just like the builtin strcmp function. In order to verify if the comparision made by my_str_cmp the results of both builtin function and my_str_cmp() function have been compared.
+*/
+
 #include<stdio.h>
 #include<string.h>
 int my_str_cmp(char * , char *);

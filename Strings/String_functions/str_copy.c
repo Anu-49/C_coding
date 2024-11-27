@@ -1,3 +1,13 @@
+/*  strcpy() is a string function which takes two strings as input and copies the source string to the destination string. The destination string is passed to the strcpy() function first and then the source string is passed as arguments to the srtcpy function.
+The destination string should be a modifiable string in order to copy the source string into destination. The source string should be a constant string.
+<br>
+#include <string.h>
+char *strcpy(char *dest, const char *src);
+char *strncpy(char *dest, const char *src, size_t n);
+
+This code copies a string into another string just like the builtin strcpy function. In order to verify our results, the results of both builtin function and my_str_cpy() function have been compared.
+*/
+
 #include<stdio.h>
 #include<string.h>
 char *my_str_cpy(char *, const char *);
