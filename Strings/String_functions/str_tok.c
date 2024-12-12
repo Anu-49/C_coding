@@ -1,3 +1,12 @@
+/*
+The strtok() function breaks a string into a sequence of zero or more nonempty tokens. On the first call to strtok(), the string to be parsed should be specified in str. In each subsequent call that should  parse  the same string, str must be NULL. The  delim  argument specifies  a  set of bytes that delimit the tokens in the parsed string.  The caller may specify different strings in delim in successive calls that parse the same string.
+Each call to strtok() returns a pointer to a null-terminated string containing the next token. This string does not include the delimiting byte. If no more tokens are found, strtok() returns NULL.
+<br>
+#include <string.h>
+char *strtok(char *str, const char *delim);
+char *strtok_r(char *str, const char *delim, char **saveptr);
+*/
+       
 #include <stdio.h>
 #include <string.h>
 
